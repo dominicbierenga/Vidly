@@ -1,0 +1,16 @@
+﻿@model Vidly.ViewModels.MovieByIdViewModel
+
+@{
+    ViewBag.Title = "MovieById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Movie == null)
+{
+    <text>Movie does not exist.</text>
+}
+
+else
+{
+    <h2>@Model.Movie.Name</h2>
+}
